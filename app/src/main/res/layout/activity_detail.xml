@@ -9,7 +9,7 @@
         android:id="@+id/detail_title"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:hint="标题1"
+        android:hint="标题"
         android:background="#D1EEEE"
         android:textSize="30sp"/>
 
