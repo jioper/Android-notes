@@ -9,7 +9,7 @@
         android:id="@+id/detail_title"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:hint="title"
+        android:hint="标题"
         android:background="#D1EEEE"
         android:textSize="30sp"/>
 
@@ -17,7 +17,7 @@
         android:id="@+id/detail_content"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:hint="content"
+        android:hint="内容"
         android:textSize="18sp"
         android:layout_marginTop="10dp"/>
 </LinearLayout>
