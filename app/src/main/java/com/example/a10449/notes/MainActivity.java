@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 diary.add(diary_item);
             } while (cursor.moveToNext());
         }
+
         cursor.close();
         adapter = new ArrayAdapter<String>(
                 MainActivity.this, android.R.layout.simple_list_item_1, diary);

@@ -81,7 +81,7 @@ public class Detail extends AppCompatActivity {
                     values.put("content", content.getText().toString());
                     db.insert(TABLE_NAME, null, values);
                     values.clear();
-                    Toast.makeText(this, "Save", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "添加成功！", Toast.LENGTH_SHORT).show();
                     finish();
                     break;
                 } else if (tag == TAG_UPDATE) {
@@ -92,6 +92,7 @@ public class Detail extends AppCompatActivity {
                     values.put("title", update_title);
                     values.put("content", update_content);
                     db.update(TABLE_NAME, values, "id=?", new String[]{String.valueOf(id)});
+                    Toast.makeText(this, "更新成功！", Toast.LENGTH_SHORT).show();
                     finish();
                     break;
                 }
@@ -99,7 +100,7 @@ public class Detail extends AppCompatActivity {
                 if (tag == TAG_UPDATE) {
                     db.delete(TABLE_NAME, "id=?", new String[]{String.valueOf(id)});
                 }
-                Toast.makeText(this, "Delete", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "删除成功！", Toast.LENGTH_SHORT).show();
                 finish();
                 break;
             default:
